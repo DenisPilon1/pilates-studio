@@ -1,0 +1,152 @@
+
+#intro {
+background-image: url("img/background.avif");
+height: 100vh;
+}
+
+#intro_onama {
+  background-image: url("img/background.avif");
+  height: 50vh;
+  }
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+#intro {
+  margin-top: -58.59px;
+}
+}
+
+.navbar .nav-link {
+color: #fff !important;
+}
+
+span {
+  color: #f82249;
+}
+
+/*--------------------------------------------------------------
+# Učlani se button
+--------------------------------------------------------------*/
+.učlani-se,
+.treninzi {
+  color: #fff;
+  background: #f82249;
+  padding: 7px 22px;
+  margin: 0 0 0 15px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.učlani-se:hover {
+  background: none;
+  color: #fff;
+}
+
+.treninzi:hover {
+  background: none;
+  color: rgb(135, 60, 60);
+}
+
+/*--------------------------------------------------------------
+# Dvorane images style
+--------------------------------------------------------------*/
+.gallery .bg-image:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  overflow: hidden;
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+.full-img-modal {
+  background: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.full-img-modal.open{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.full-img{
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);  
+  transition: all 0.25s ease-out;
+}
+
+.full-img.open{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*--------------------------------------------------------------
+# Text obostrano poravnat
+--------------------------------------------------------------*/
+.text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*--------------------------------------------------------------
+# Obrazac za prijavu
+--------------------------------------------------------------*/
+.gradient-custom-2 {
+  background-image: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+.gradient-custom-1 {
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+}
+.prijava-btn:hover {
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Postavi boju placeholdera datuma
+--------------------------------------------------------------*/
+input[type="date"] {
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+
+
+.prijava-btn:hover {
+  background-color: rgb(142, 134, 134);
+}
+
+/*navbar change color on creeen size 365px*/
+@media screen and (max-width: 999px) {
+  nav{
+    background-color: rgb(57, 55, 55);
+  }
+}
+
+/*change hamburger color to white*/
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
